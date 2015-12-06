@@ -26,7 +26,6 @@ namespace ConsoleApplication
                         Thread.Sleep(500);
                         try
                         {
-                            //Changed from IPAddress.Loopback to IPAddress.Parse("127.0.0.1")
                             socket.Connect(new IPEndPoint(IPAddress.Loopback, port));
                         }
                         catch (SocketException)
